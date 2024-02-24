@@ -1,6 +1,6 @@
 "use client"
 
-import Register from "../components/Register";
+import Link from "next/link";
 import React from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -13,7 +13,10 @@ const Home = () => {
         <p className='font-light text-sm italic text-right leading-loose'>Protected by Stytch's Device Fingerprinting (DFP)</p>
       </div>
       <div className="divider lg:divider-horizontal"></div>
-      <Register />
+      <div className="w-1/2 p-6 m-auto bg-white rounded-md shadow-md flex flex-col space-y-4 justify-center items-center ring-2 ring-gray-800/50 lg:max-w-lg">
+        <Link className="btn btn-wide" href={"/login"}>Log in</Link>
+        <Link className="btn btn-wide" href={"/register"}>Sign Up</Link>
+      </div>
       <ToastContainer />
     </div>
   );
