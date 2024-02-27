@@ -1,8 +1,9 @@
-const GoogleButton = ({ text }) => {
+'use client'
 
-    const public_token = process.env.NEXT_PUBLIC_STYTCH_PUBLIC_TOKEN;
-    const startDiscoveryOauthUrl = '';
+const GoogleButton = ({ text }) => {
     
+    const startDiscoveryOauthUrl = `${process.env.STYTCH_DISCOVERY_START_OAUTH}`;
+
     return (
         <div><a href={startDiscoveryOauthUrl}>
                 <button className="ring-1 ring-gray-800/50 gsi-material-button">
@@ -23,7 +24,6 @@ const GoogleButton = ({ text }) => {
                 </button>
             </a>
         </div>
-
     )
 }
 
