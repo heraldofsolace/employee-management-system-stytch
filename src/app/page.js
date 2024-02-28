@@ -15,7 +15,7 @@ const Home = () => {
       </div>
       <div className="divider lg:divider-horizontal"></div>
       <div className="w-1/2 p-6 m-auto bg-white rounded-md shadow-md flex flex-col space-y-4 justify-center items-center ring-2 ring-gray-800/50 lg:max-w-lg">
-        <button className="btn btn-wide">Log in</button>
+        <a href={"/login"}><button className="btn btn-wide">Log in</button></a>
         <Link className="btn btn-wide" href={"/register"}>Sign Up</Link>
       </div>
       <ToastContainer />
