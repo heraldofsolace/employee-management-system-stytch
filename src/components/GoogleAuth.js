@@ -2,7 +2,7 @@
 
 const GoogleButton = ({ text }) => {
     
-    const startDiscoveryOauthUrl = `${process.env.STYTCH_DISCOVERY_START_OAUTH}`;
+    const startDiscoveryOauthUrl = `${process.env.NEXT_PUBLIC_STYTCH_DISCOVERY_START_OAUTH}`;
 
     return (
         <div><a href={startDiscoveryOauthUrl}>
