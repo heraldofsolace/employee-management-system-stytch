@@ -15,7 +15,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="lemonade">
       <body className={inter.className}>
-        {/* insert script tag */}
+      <Script
+          src="https://elements.stytch.com/telemetry.js"
+          strategy="beforeInteractive"
+      />
         <Navigation />
         {children}
       </body>
